@@ -1,8 +1,11 @@
 import json
 
 def main():
-    with open("params.json", "r") as f:
-        params = json.load(f)
+    try:
+        with open("params.json", "r") as f:
+            params = json.load(f)
+    except:
+        pass
 
     print("Paramètres reçus :", params)
 
