@@ -1,6 +1,7 @@
 import json
 
 def main():
+    params = {}
     try:
         with open("params.json", "r") as f:
             params = json.load(f)
